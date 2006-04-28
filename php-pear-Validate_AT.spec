@@ -30,7 +30,7 @@ Package containes locale validation for AT such as:
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Klasa sprawdzaj±ca poprawno¶æ danych dla Austrii:
+Klasa sprawdzaj±ca poprawno¶æ dla Austrii danych takich jak:
 - numer ubezpieczenia (SSN)
 - kod pocztowy
 
@@ -52,4 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Validate/AT.php
+%dir %{php_pear_dir}/data/Validate_AT
 %{php_pear_dir}/data/Validate_AT/AT_postcodes.txt
