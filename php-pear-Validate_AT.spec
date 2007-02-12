@@ -5,7 +5,7 @@
 %define		_pearname	Validate_AT
 
 Summary:	%{_pearname} - Validation class for AT
-Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzająca poprawność dla Austrii
+Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Austrii
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
