@@ -5,7 +5,7 @@
 %define		_pearname	Validate_AT
 
 Summary:	%{_pearname} - Validation class for AT
-Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla Austrii
+Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzajÄ…ca poprawnoÅ›Ä‡ dla Austrii
 Name:		php-pear-%{_pearname}
 Version:	0.5.1
 Release:	1
@@ -30,8 +30,8 @@ Package containes locale validation for AT such as:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa sprawdzaj±ca poprawno¶æ dla Austrii danych takich jak:
+%description -l pl.UTF-8
+Klasa sprawdzajÄ…ca poprawnoÅ›Ä‡ dla Austrii danych takich jak:
 - numer ubezpieczenia (SSN)
 - kod pocztowy
 
