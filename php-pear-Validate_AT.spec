@@ -3,22 +3,22 @@
 %define		_subclass	AT
 %define		_status		alpha
 %define		_pearname	Validate_AT
-
 Summary:	%{_pearname} - Validation class for AT
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Austrii
 Name:		php-pear-%{_pearname}
-Version:	0.5.1
-Release:	2
+Version:	0.5.2
+Release:	1
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	7e3b9bec0e062dd4252a1101d18f8106
+# Source0-md5:	227d00ceaa05b627ad45c57a59cff129
 URL:		http://pear.php.net/package/Validate_AT/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
+Requires:	php-pear-PEAR-core >= 1:1.6.1
 Requires:	php-pear-Validate >= 0.5.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -44,6 +44,9 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+
+# don't care for tests
+rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/%{_pearname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
