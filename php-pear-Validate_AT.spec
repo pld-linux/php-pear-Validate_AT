@@ -1,6 +1,5 @@
 %define		_status		alpha
 %define		_pearname	Validate_AT
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Validation class for AT
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Austrii
 Name:		php-pear-%{_pearname}
